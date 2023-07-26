@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E GURU</title>
+
+
+    <style>
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+        .menu , .profile {
+            display: none;
+        }
+        .box1 {
+            display: flex;
+            font-weight: bolder;
+            font-size: 25px;
+            align-items: center;
+            gap: 10px;
+        }
+       
+        .box2 {
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: orangered;
+        }
+        li {
+            list-style-type: none;
+            padding-right: 20px;
+        }
+        .btn1 button {
+            padding: 10px;
+            background: white;
+        }
+
+
+        /* main section (body) */
+
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            gap: 40px;
+            margin: 40px;
+            padding: 40px;
+           
+        }
+        h1 {
+            font-size: 60px;
+        }
+
+
+        .main p {
+            border-left: 2px solid gray;
+            width: 350px;
+            margin-bottom: 60px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .box3 {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+       
+
+
+        .btn2 button {
+            background: orangered;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .imx {
+            position: absolute;
+            left: 800px;
+        }
+
+
+        .imx2 {
+            position: absolute;
+            margin: 20px;
+        }
+        .imx3 {
+            position: relative;
+            bottom: 20px;
+            right: 10px;
+            z-index: 2;
+        }
+        .imx4 {
+            position: relative;
+            bottom: 400px;
+            left: 110px;
+            z-index: 1;
+        }
+        .imx4 img {
+            height: 400px;
+           
+        }
+        .imx5 {
+            position: relative;
+            bottom: 400px;
+            left: 450px;
+           
+        }
+        .imx6 {
+            position: relative;
+            bottom: 420px;
+        }
+
+
+       
+        /* footer section  */
+
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+            padding: 40px;
+            width: 100vw;
+            background: rgb(63, 47, 47);
+        }
+        h2 , h3 {
+            color: white;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        span {
+            color: #cba2a2;
+        }
+        .box4 {
+            margin-top: -20px;
+            width: 300px;
+        }
+        .box5 {
+            width: 300px;
+        }
+        .box6 {
+            width: 300px;
+        }
+
+
+        .imx7 img {
+            background: rgb(72, 209, 72);
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        .imx8 img {
+            background: rgb(227, 93, 45);
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        .imx9 img {
+            background: rgb(77, 77, 230);
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+        }
+
+
+        /* mobile responsive */
+
+
+        /* header section */
+
+
+        @media screen and (max-width:576px) {
+            .menu , .profile {
+                display: block;
+            }
+            .box2 , .bt1 {
+                display: none;
+            }
+
+
+           
+        }
+
+
+         /* main section (body) */
+
+
+         @media screen and (max-width:576px) {
+           
+            .main {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                margin: 0px;
+
+
+            }
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 70vw;
+            }
+           
+
+
+            .imx {
+                position: absolute;
+                top: 870px;
+                left: 0px;
+            }
+            .imx2 {
+                position: absolute;
+            }
+           
+            .imx3 {
+                position: relative;
+            }
+        }
+
+
+        /* footer section */
+
+
+        @media screen and (max-width:576px) {
+            .footer {
+                display: flex;
+                flex-direction:column;
+                text-align: center;
+                margin-top: 600px;
+                padding: 30px;
+                gap: 20px;
+               
+            }
+        }
+   
+    </style>
+</head>
+<body>
+    <header>
+      <div class="header">
+        <div class="menu">
+            <img src="./menu-icon.png" alt="">
+        </div>
+        <div class="box1">
+            <div class="img1">
+               <img src="./logo.png" alt="">
+            </div>
+            <p> E GURU </p>
+            </div>
+
+
+        <div class="box2">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">How it works</a></li>
+        </div>
+
+
+        <div class="btn1 bt1">
+            <button>Sign Up</button>
+        </div>
+        <div class="profile">
+            <img src="./user-profile.png" alt="">
+        </div>
+        </div>
+      </header>
+
+
+      <!-- main section (body) -->
+
+
+    <main>
+        <div class="main">
+            <div>
+                <h1>STUDY FROM <br> HOME WITH EXPERT</h1>
+                <p>A learning system based on formalised teaching with the help of resources</p>
+
+
+            <div class="box3">    
+              <div class=" btn2">
+                <button>Get Started</button>
+              </div>
+              <div class="btn1">
+                <button>Learn More</button>
+              </div>
+              <div class="arrow">
+                  <img src="./curve-arrow.png" alt="">
+               </div>
+           
+            </div>
+            </div>
+            <div class="imx">
+                <div class="imx1">
+                    <img src="./orange-arrow.png" alt="">
+                </div>
+                <div class="imx2">
+                    <img src="./main-image-bg.png" alt="">
+                </div>
+                <div class="imx3">
+                    <img src="./main-image-pattern.png" alt="">
+                </div>
+                <div class="imx4">
+                    <img src="./main-image.png" alt="">
+                </div>
+                <div class="imx5">
+                    <img src="./circle.png" alt="">
+                </div>
+                <div class="imx6">
+                    <img src="./green-arrow.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer section -->
+
+
+    <footer>
+        <div class="footer">
+
+
+            <div class="box4">
+                <h2>WHY WE ARE THE BEST</h2>
+                <span>a learning system based on formalised teaching with help of....</span>
+            </div>
+
+
+            <div class="box5">
+                <div class="imx7">
+                    <img src="./vector3.png" alt="">
+                </div>
+                <h3>EXPERT TEACHER</h3>
+                <span>a learning system based on formalised teaching</span>
+            </div>
+
+
+            <div class="box5">
+                <div class="imx8">
+                    <img src="./vector2.png" alt="">
+                </div>
+                <h3>ONLINE COURSES</h3>
+                <span>a learning system based on formalised teaching</span>
+            </div>
+
+
+            <div class="box6">
+                <div class="imx9">
+                    <img src="./vector1.png" alt="">
+                </div>
+                <h3>24/7 SUPPORT</h3>
+                <span>a learning system based on formalised teaching</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
